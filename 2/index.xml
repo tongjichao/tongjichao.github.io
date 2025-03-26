@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2s on tjc blog</title>
+    <link>https://example.org/2/</link>
+    <description>Recent content in 2s on tjc blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 04 Dec 2023 16:25:59 +0800</lastBuildDate>
+    <atom:link href="https://example.org/2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frist1</title>
+      <link>https://example.org/2/frist/</link>
+      <pubDate>Mon, 04 Dec 2023 16:25:59 +0800</pubDate>
+      <guid>https://example.org/2/frist/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tjc blog</title>
-    <link>https://example.org/</link>
-    <description>Recent content on tjc blog</description>
+    <title>Golangs on tjc blog</title>
+    <link>https://example.org/golang/</link>
+    <description>Recent content in Golangs on tjc blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Mon, 04 Dec 2023 16:25:59 +0800</lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>file xx has a name conflict over xx</title>
       <link>https://example.org/golang/first/</link>
@@ -18,20 +18,6 @@ panic: proto: file &amp;#34;bytedance.proto&amp;#34; has a name conflict over OA
 从报错中，图中错误解决连接，访问，官网给出两种解决方案，分别如下：
 1.方案一：编译器修改： 编译代码时指定 -ldflags &amp;ldquo;-X google.golang.org/protobuf/reflect/protoregistry.conflictPolicy=warn&amp;rdquo;
 2.方案二：运行时指定 GOLANG_PROTOBUF_REGISTRATION_CONFLICT=warn 即可</description>
-    </item>
-    <item>
-      <title>Second</title>
-      <link>https://example.org/2024/second/</link>
-      <pubDate>Mon, 04 Dec 2023 16:16:13 +0800</pubDate>
-      <guid>https://example.org/2024/second/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://example.org/2024/about/</link>
-      <pubDate>Mon, 04 Dec 2023 15:49:07 +0800</pubDate>
-      <guid>https://example.org/2024/about/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>

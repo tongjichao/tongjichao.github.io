@@ -29,23 +29,23 @@
 
     
     
-      <link href="/index.xml" rel="alternate" type="application/rss+xml" title="tjc blog" />
-      <link href="/index.xml" rel="feed" type="application/rss+xml" title="tjc blog" />
+      <link href="/golang/index.xml" rel="alternate" type="application/rss+xml" title="tjc blog" />
+      <link href="/golang/index.xml" rel="feed" type="application/rss+xml" title="tjc blog" />
       
     
 
     
-      <link rel="canonical" href="https://example.org/">
+      <link rel="canonical" href="https://example.org/golang/">
     
 
-    <meta property="og:title" content="tjc blog" />
+    <meta property="og:title" content="Golangs" />
 <meta property="og:description" content="The last theme you&#39;ll ever need. Maybe." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://example.org/" />
+<meta property="og:url" content="https://example.org/golang/" />
 
-<meta itemprop="name" content="tjc blog">
+<meta itemprop="name" content="Golangs">
 <meta itemprop="description" content="The last theme you&#39;ll ever need. Maybe."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="tjc blog"/>
+<meta name="twitter:title" content="Golangs"/>
 <meta name="twitter:description" content="The last theme you&#39;ll ever need. Maybe."/>
 
 	
@@ -101,7 +101,7 @@
 
       <div class="tc-l pv3 ph3 ph4-ns">
         <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-          tjc blog
+          Golangs
         </h1>
         
       </div>
@@ -111,86 +111,33 @@
 
     <main class="pb7" role="main">
       
- <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    
-  </article>
-  
-  
-  
-  
-  
-  
-  
-    
-    
-
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
+    <section class="flex-ns flex-wrap justify-around mt5">
       
-       
-          <h1 class="flex-none">
-            最近 2024s
-          </h1>
-        
-
-      
-
-      <section class="w-100 mw8">
-        
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/2024/second/" class="color-inherit dim link">
-            Second
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          
-        </div>
-          <a href="/2024/second/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">继续阅读</a>
-        
-      </div>
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Golangs</span>
+    <h1 class="f3 near-black">
+      <a href="/golang/first/" class="link black dim">
+        file xx has a name conflict over xx
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      最近在编译使用proto时，遇到报错，错误如下
+panic: proto: file &#34;bytedance.proto&#34; has a name conflict over OAID previously from: &#34;xxx/baidu&#34; currently from: &#34;xxx/bytedance&#34; See &lt;https://protobuf.dev/reference/go/faq#namespace-conflict&gt; 截图如下
+从报错中，图中错误解决连接，访问，官网给出两种解决方案，分别如下：
+1.方案一：编译器修改： 编译代码时指定 -ldflags &ldquo;-X google.golang.org/protobuf/reflect/protoregistry.conflictPolicy=warn&rdquo;
+2.方案二：运行时指定 GOLANG_PROTOBUF_REGISTRATION_CONFLICT=warn 即可
     </div>
+    <a href="/golang/first/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">继续阅读</a>
   </div>
-</article>
+</div>
 
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/2024/about/" class="color-inherit dim link">
-            About
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          
         </div>
-          <a href="/2024/about/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">继续阅读</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
-      </section>
-
       
-
-      </div>
-  
+    </section></article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
